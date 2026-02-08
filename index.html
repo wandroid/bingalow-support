@@ -3,21 +3,91 @@
 <head>
   <meta charset="utf-8">
   <title>BinGlow Support</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      background-color: #000000;
+      color: #e6e6e6;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* Radial glow field behind the icon */
+    .icon-glow {
+      width: 560px;
+      max-width: 95%;
+      margin: 10px auto 30px auto;
+      padding: 30px;
+      border-radius: 50%;
+
+      background: radial-gradient(
+        circle at center,
+        rgba(255,180,80,0.18) 0%,
+        rgba(255,140,40,0.10) 35%,
+        rgba(255,120,20,0.05) 55%,
+        rgba(0,0,0,0.0) 75%
+      );
+    }
+
+    .icon {
+      width: 100%;
+      height: auto;
+      display: block;
+
+      /* soft optical bloom */
+      filter: drop-shadow(0 0 28px rgba(255,170,60,0.35));
+    }
+
+    h1 {
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      color: #cccccc;
+      margin-top: 28px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      line-height: 1.6;
+      margin: 8px 0;
+    }
+
+    strong, a {
+      color: #ffd27a;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>BinGlow Support</h1>
-  <h2>Version 1.0</h2>
+  <div class="container">
 
-  <p>BinGlow is a binary-style ambient clock display for iPhone.</p>
+    <div class="icon-glow">
+      <img src="binglow-icon-1024.png" alt="BinGlow Icon" class="icon">
+    </div>
 
-  <h2>Support</h2>
-  <p>For questions, bug reports, or suggestions, please contact:</p>
-  <p><strong>nazrobia@icloud.com</strong></p>
+    <h1>BinGlow Support</h1>
+    <h2>Version 1.0</h2>
 
-  <p>Please include your device model and iOS version when reporting issues.</p>
+    <p>BinGlow is a binary-style ambient clock display for iPhone.</p>
 
-  <h2>Privacy</h2>
-  <p>BinGlow does not collect, store, or transmit personal data.</p>
+    <h2>Support</h2>
+    <p>For questions, bug reports, or suggestions, please contact:</p>
+    <p><strong>nazrobia@icloud.com</strong></p>
 
+    <p>Please include your device model and iOS version when reporting issues.</p>
+
+    <h2>Privacy</h2>
+    <p>BinGlow does not collect, store, or transmit personal data.</p>
+
+  </div>
 </body>
 </html>
